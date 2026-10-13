@@ -1,6 +1,6 @@
 # Sistema de Controle de Revenda e Estoque 🛍️📊
 
-Aplicação web completa, moderna e de execução local desenvolvida para o controle simplificado de estoque, compras por lote, registro de vendas e acompanhamento financeiro em tempo real para revendedoras e pequenos empreendedores.
+Aplicação de execução local desenvolvida com IA para o controle simplificado de estoque, compras por lote, registro de vendas e acompanhamento financeiro em tempo real para revendedoras e pequenos empreendedores.
 
 ---
 
@@ -28,7 +28,7 @@ O sistema foi desenhado para eliminar planilhas complexas e oferecer uma experi�
 
 ### Backend
 - **Python 3.10+**
-- **FastAPI** (API REST moderna e assíncrona)
+- **FastAPI** (API REST)
 - **SQLModel** / **SQLAlchemy** (ORM tipado com validação Pydantic)
 - **SQLite** (Banco de dados em arquivo local)
 - **Uvicorn** (Servidor ASGI de alta performance)
@@ -134,3 +134,17 @@ O frontend estará acessível em: `http://localhost:5173`.
 - O banco de dados inicia **100% limpo (do zero)**. Novos produtos, compras e vendas serão registrados conforme você utiliza a aplicação.
 - Para fazer backup dos seus dados, basta copiar o arquivo `backend/database.db`.
 - Para restaurar em outra máquina, basta colocar o `database.db` na pasta `backend/`.
+
+
+⚠️ Lembrete de ouro: Ao copiar o projeto de um computador para outro, copie o database.db, mas NÃO copie as pastas backend/venv nem frontend/node_modules. O script .bat criará essas duas pastas novas no outro computador sem erros.
+
+## Motivação e Detalhes:
+
+Uma pessoa próxima que revende produtos falou-me sobre o desejo de controlar o estoque, custos e preços de venda desses produtos. Ao pesquisar na internet, não encontrei nenhum app ou site que sanasse todas as necessidades ou que me agradasse. O usuário também informou sua dificuldade com planilhas. Resolvi então criar esta aplicação, com auxílio de IA, informando a ela a estutura principal, dando todo o contexto, funcionalidades e o roadmap que seguiríamos para o desenvolvimento. Sendo assim, o sistema busca sanar, como já dito anteriormente, necessidades como:
+
+- Cadastro de Produtos;
+- Controle de Estoque;
+- Controle de compra e venda por lotes;
+- Visualização rápida de custo, faturamento e lucro.
+
+O sistema com certeza tem margem para melhoria, mas a princípio, da maneira que está, já soluciona esses problemas.
